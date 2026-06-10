@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image:url(school.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .form-box{
+            width: 350px;
+            margin: 50px auto;
+            background-image:radial-gradient(circle,white,rgb(250, 228, 141)) ;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2{
+            color: purple;
+        }
+
+        fieldset{
+            border: 2px solid purple;
+            padding: 15px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .gender input{
+            width: auto;
+        }
+
+        button{
+            background-color: purple;
+            color:white;
+            border: none;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Student Information</h2>
+
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label>Name:</label><br>
+        <input type="text"><br>
+
+        <label>Age:</label><br>
+        <input type="number"><br>
+
+        <label>Gender:</label><br>
+
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <br>
+
+        <button>Submit</button>
+    </fieldset>
+</div>
+
+</body>
+</html>
